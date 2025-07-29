@@ -17,9 +17,9 @@ export class ImageSearchErrorHandler {
     context?: Record<string, any>
   ): SearchError {
     const searchError: SearchError = {
-      code: this.generateErrorCode(error),
-      message: this.sanitizeErrorMessage(error.message),
-      timestamp: new Date(),
+errorCode: this.generateErrorCode(error),
+errorMessage: this.sanitizeErrorMessage(error.message),
+timestamp: new Date(),
       context: { searchQuery, ...context }
     };
     
